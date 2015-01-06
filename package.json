@@ -1,0 +1,11 @@
+{
+  "name": "SamuelM.Co",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "express": "^4.10.7",
+    "jade": "^1.8.2",
+    "nib": "^1.0.4",
+    "stylus": "^0.49.3"
+  }
+}

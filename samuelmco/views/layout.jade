@@ -1,0 +1,73 @@
+html
+  head
+    meta(charset='utf-8')
+    title Samuel Coe
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/pure-min.css')
+    link(rel='stylesheet', href='http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css')
+    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
+    link(href='stylesheets/sc_main.css', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Raleway:500', rel='stylesheet', type='text/css')
+  body
+    .header
+      .home-menu.pure-menu.pure-menu-open.pure-menu-horizontal.pure-menu-fixed
+        a.pure-menu-heading(href='/') SamuelM.Co[e]
+        ul
+          li.pure-menu-selected
+            a(href='/') Home
+          li
+            a(href='/about') About
+          li
+            a(href='/projects') Projects
+          li
+            a(href='https://github.com/sammcoe') Github
+          li
+            a(href='mailto:samuel.m.coe@gmail.com') Contact
+    .splash-container
+      block splash
+    .content-wrapper
+      .content
+        block mid-content
+      //-.ribbon.l-box-lrg.pure-g
+        .l-box-lrg.is-center.pure-u-1.pure-u-md-1-2.pure-u-lg-2-5
+          img.pure-img-responsive(alt='File Icons', width='300', src='img/common/file-icons.png')
+        .pure-u-1.pure-u-md-1-2.pure-u-lg-3-5
+          h2.content-head.content-head-ribbon Laboris nisi ut aliquip.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            | consequat. Duis aute irure dolor.
+      //-.content
+        h2.content-head.is-center Dolore magna aliqua. Uis aute irure.
+        .pure-g
+          .l-box-lrg.pure-u-1.pure-u-md-2-5
+            form.pure-form.pure-form-stacked
+              fieldset
+                label(for='name') Your Name
+                input#name(type='text', placeholder='Your Name')
+                label(for='email') Your Email
+                input#email(type='email', placeholder='Your Email')
+                label(for='password') Your Password
+                input#password(type='password', placeholder='Your Password')
+                button.pure-button(type='submit') Sign Up
+          .l-box-lrg.pure-u-1.pure-u-md-3-5
+            h4 Contact Us
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              | consequat.
+            h4 More Information
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut labore et dolore magna aliqua.
+
+      .footer.l-box.is-center
+        i Copyright
+        |  © 
+        script(type='text/javascript').
+          var d = new Date()
+          document.write(d.getFullYear())
+        |         Samuel Coe
+
